@@ -3,11 +3,6 @@ window.Writer = function(){
 		console.log("called writer");
 		console.log(link);
 
-//        link.click();
+        window.open(link);
 	};
 };
-
-
-
-
-
