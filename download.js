@@ -16,9 +16,13 @@ $(document).ready(function() {
 			isJQuery = true;
 
 			// call $(this).attr("href");
+            var i = 1;
 			$(".dataList").find("tbody").children("tr:nth-child(1)").nextAll().children("td:nth-child(2)").find("a").each(function(item) {
-				writer.writeToFile($(this).attr("href"));
-				
+               var downloadLink = this;
+               setTimeout(function() {
+			     writer.writeToFile(downloadLink);
+               }, i * 300);
+               i++;
 			},this);
 			// go to  call jquery 
 			console.log("hello world");

@@ -3,8 +3,7 @@ window.Writer = function(){
 		console.log("called writer");
 		console.log(link);
 
-        //chrome.downloads.download({url: link}, function(id) {
-        //});
+        link.click();
 	};
 };
 
