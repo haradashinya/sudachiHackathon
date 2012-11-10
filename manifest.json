@@ -9,7 +9,7 @@
     "content_scripts":[ 
     {
         "matches": ["https://*/*"],
-        "js": ["./download.js"],
+        "js": ["jquery.js","./download.js","./writer.js"],
         "run_at": "document_end"
     }
     ]
