@@ -1,0 +1,16 @@
+{
+    "name": "Cybozu Office File Downloader",
+    "version": "2",
+    "manifest_version": 2,
+    "description": "Cybozu Office File Downloader",
+    "browser_action": {
+        "default_icon": "icon.png"
+    },
+    "content_scripts":[ 
+    {
+        "matches": ["https://*/*"],
+        "js": ["./download.js"],
+        "run_at": "document_end"
+    }
+    ]
+}
